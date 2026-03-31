@@ -4,6 +4,8 @@ const LINKS = [
   { href: "/learn/same-origin", label: "同源与跨域" },
   { href: "/learn/xss", label: "XSS" },
   { href: "/learn/csrf", label: "CSRF" },
+  { href: "/learn/cookies-samesite", label: "Cookie" },
+  { href: "/learn/csp", label: "CSP" },
 ] as const;
 
 export function SiteHeader() {

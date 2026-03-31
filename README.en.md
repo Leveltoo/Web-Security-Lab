@@ -38,6 +38,8 @@ pnpm start
 | `/learn/same-origin` | Same-origin policy & cross-origin |
 | `/learn/xss` | XSS: defense concepts (controlled demo) |
 | `/learn/csrf` | CSRF & anti-CSRF tokens (conceptual demo) |
+| `/learn/cookies-samesite` | Cookies, SameSite & a simplified carry model (interactive) |
+| `/learn/csp` | CSP vs inline scripts (iframe demo) |
 
 ## Deploy (Vercel)
 

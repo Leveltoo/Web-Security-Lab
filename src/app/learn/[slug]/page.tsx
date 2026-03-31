@@ -1,23 +1,35 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 import type { ComponentType } from "react";
+import CookiesSamesite from "@/content/learn/cookies-samesite.mdx";
+import Csp from "@/content/learn/csp.mdx";
 import Csrf from "@/content/learn/csrf.mdx";
 import SameOrigin from "@/content/learn/same-origin.mdx";
 import Xss from "@/content/learn/xss.mdx";
 
-const SLUGS = ["same-origin", "xss", "csrf"] as const;
+const SLUGS = [
+  "same-origin",
+  "xss",
+  "csrf",
+  "cookies-samesite",
+  "csp",
+] as const;
 type Slug = (typeof SLUGS)[number];
 
 const mdxBySlug: Record<Slug, ComponentType> = {
   "same-origin": SameOrigin,
   xss: Xss,
   csrf: Csrf,
+  "cookies-samesite": CookiesSamesite,
+  csp: Csp,
 };
 
 const titles: Record<Slug, string> = {
   "same-origin": "同源与跨域",
   xss: "XSS 与防御思路",
   csrf: "CSRF 与同步器令牌",
+  "cookies-samesite": "Cookie 与 SameSite",
+  csp: "内容安全策略（CSP）",
 };
 
 type Props = { params: Promise<{ slug: string }> };

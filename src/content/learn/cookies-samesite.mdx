@@ -1,0 +1,12 @@
+# Cookie、会话与 SameSite
+
+## 学习目标
+
+- 理解 Cookie 常见属性：SameSite、Secure、HttpOnly 在浏览器中的**分工**。
+- 能把「跨站请求是否携带 Cookie」与 CSRF、会话安全**概念上**联系起来。
+
+## 正文
+
+Cookie 可用于维持会话；**SameSite** 约束跨站请求是否携带 Cookie，**Secure** 约束是否只在 HTTPS 下发送，**HttpOnly** 约束 JavaScript 是否可读。三者组合决定「浏览器在某一类请求里会不会带上会话 Cookie」——下方实验区用**简化模型**对照，不对外站发起真实请求。
+
+<CookieSameSiteLab />

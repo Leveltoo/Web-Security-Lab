@@ -16,6 +16,17 @@ const CHAPTERS = [
     title: "CSRF 与同步器令牌",
     blurb: "概念上演示同步器令牌与请求状态，不涉及外站请求。",
   },
+  {
+    href: "/learn/cookies-samesite",
+    title: "Cookie 与 SameSite",
+    blurb:
+      "调节 SameSite / Secure / HttpOnly 与场景，查看简化模型下的携带与可读性。",
+  },
+  {
+    href: "/learn/csp",
+    title: "内容安全策略（CSP）",
+    blurb: "切换策略与内联脚本检测，理解 CSP 作为深度防御的角色。",
+  },
 ] as const;
 
 export default function Home() {
@@ -38,7 +49,7 @@ export default function Home() {
         >
           章节
         </h2>
-        <ul className="grid gap-4 sm:grid-cols-1 md:grid-cols-3">
+        <ul className="grid gap-4 sm:grid-cols-1 md:grid-cols-2 xl:grid-cols-3">
           {CHAPTERS.map((c) => (
             <li key={c.href}>
               <Link

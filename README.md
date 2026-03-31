@@ -38,6 +38,8 @@ pnpm start
 | `/learn/same-origin` | 同源与跨域 |
 | `/learn/xss` | XSS 与防御思路（受控演示） |
 | `/learn/csrf` | CSRF 与同步器令牌（概念演示） |
+| `/learn/cookies-samesite` | Cookie、SameSite 与简化携带模型（强交互） |
+| `/learn/csp` | CSP 与内联脚本对照（iframe 演示） |
 
 ## 部署（Vercel）
 
