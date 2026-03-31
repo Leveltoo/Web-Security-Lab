@@ -1,36 +1,56 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Web 安全实验室
 
-## Getting Started
+[English](./README.en.md)
 
-First, run the development server:
+面向 **浏览器侧 Web 安全** 概念的学习与受控小实验（**教育用途**）。使用 Next.js App Router、MDX 章节与交互实验区，便于个人复习与 GitHub 展示。
+
+## 在线演示
+
+**生产环境（部署后请将下方占位替换为真实 URL）：**  
+<https://YOUR-VERCEL-URL>
+
+## 技术栈
+
+- Next.js 16（App Router）
+- React 19、TypeScript
+- Tailwind CSS v4、Biome
+- `@next/mdx`、MDX 章节 + React 实验区组件
+
+## 本地运行
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
+pnpm install
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+浏览器打开 [http://localhost:3000](http://localhost:3000)。
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+生产构建：
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+pnpm build
+pnpm start
+```
 
-## Learn More
+## 章节
 
-To learn more about Next.js, take a look at the following resources:
+| 路径 | 内容 |
+|------|------|
+| `/learn/same-origin` | 同源与跨域 |
+| `/learn/xss` | XSS 与防御思路（受控演示） |
+| `/learn/csrf` | CSRF 与同步器令牌（概念演示） |
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 部署（Vercel）
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+1. 将本目录推送到 GitHub（若仓库根不是 `my-app`，在 Vercel 项目设置 **Root Directory** 为 `my-app`）。
+2. 导入仓库并部署；将生成的生产 URL 写入本 README 与 `README.en.md` 的「在线演示」处。
 
-## Deploy on Vercel
+## 安全与合规
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+- 内容仅供**个人学习与教育演示**，请勿用于未授权测试或攻击任何系统。
+- 实验均在**站内/受控**场景说明概念，不引导对真实第三方站点发起攻击。
+- 使用本仓库或在线站点即表示你同意遵守当地法律法规与平台规则。
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 许可证
+
+沿用各依赖库的许可证；若你为仓库添加许可证文件，请在此同步说明。
