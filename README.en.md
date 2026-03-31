@@ -6,8 +6,7 @@ A **learning site** with small, **controlled** browser-side **web security** dem
 
 ## Live demo
 
-**Production URL (replace the placeholder after you deploy):**  
-<https://YOUR-VERCEL-URL>
+<https://web-security-lab.vercel.app/>
 
 ## Stack
 
@@ -43,7 +42,7 @@ pnpm start
 ## Deploy (Vercel)
 
 1. Push this directory to GitHub (if the repo root is not `my-app`, set **Root Directory** to `my-app` in Vercel).
-2. Import the repo and deploy; put the production URL in both this file and `README.md` under “Live demo” / “在线演示”.
+2. Import the repo and deploy; the production URL is listed under **Live demo** above.
 
 ## Safety & compliance
 

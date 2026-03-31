@@ -6,8 +6,7 @@
 
 ## 在线演示
 
-**生产环境（部署后请将下方占位替换为真实 URL）：**  
-<https://YOUR-VERCEL-URL>
+<https://web-security-lab.vercel.app/>
 
 ## 技术栈
 
@@ -43,7 +42,7 @@ pnpm start
 ## 部署（Vercel）
 
 1. 将本目录推送到 GitHub（若仓库根不是 `my-app`，在 Vercel 项目设置 **Root Directory** 为 `my-app`）。
-2. 导入仓库并部署；将生成的生产 URL 写入本 README 与 `README.en.md` 的「在线演示」处。
+2. 导入仓库并部署；生产地址见上文「在线演示」。
 
 ## 安全与合规
 
