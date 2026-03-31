@@ -42,7 +42,7 @@ pnpm start
 ## 部署（Vercel）
 
 1. 将本目录推送到 GitHub（若仓库根不是 `my-app`，在 Vercel 项目设置 **Root Directory** 为 `my-app`）。
-2. 导入仓库并部署；生产地址见上文「在线演示」。
+2. 导入仓库并部署；生产地址见上文 **在线演示**。
 
 ## 安全与合规
 
@@ -52,4 +52,6 @@ pnpm start
 
 ## 许可证
 
-沿用各依赖库的许可证；若你为仓库添加许可证文件，请在此同步说明。
+本项目采用 **MIT License**。完整条款见 [`LICENSE`](./LICENSE)。
+
+Copyright (c) 2026 牛战士

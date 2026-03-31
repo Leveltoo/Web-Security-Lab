@@ -2,7 +2,7 @@
 
 [中文](./README.md)
 
-A **learning site** with small, **controlled** browser-side **web security** demos (for **education only**). Built with Next.js App Router, MDX chapters, and interactive lab components—for study notes and a public GitHub portfolio.
+A site for learning **browser-side web security** through **controlled** demos, for **educational purposes only**. Built with Next.js App Router, MDX chapters, and interactive lab components—for exam prep and a public GitHub portfolio.
 
 ## Live demo
 
@@ -13,7 +13,7 @@ A **learning site** with small, **controlled** browser-side **web security** dem
 - Next.js 16 (App Router)
 - React 19, TypeScript
 - Tailwind CSS v4, Biome
-- `@next/mdx`, MDX content + React lab components
+- `@next/mdx`, MDX chapters + interactive lab components
 
 ## Local development
 
@@ -22,7 +22,7 @@ pnpm install
 pnpm dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000).
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
 Production build:
 
@@ -33,23 +33,25 @@ pnpm start
 
 ## Chapters
 
-| Path | Topic |
-|------|--------|
+| Path | Description |
+|------|-------------|
 | `/learn/same-origin` | Same-origin policy & cross-origin |
-| `/learn/xss` | XSS concepts (controlled demo) |
+| `/learn/xss` | XSS: defense concepts (controlled demo) |
 | `/learn/csrf` | CSRF & anti-CSRF tokens (conceptual demo) |
 
 ## Deploy (Vercel)
 
 1. Push this directory to GitHub (if the repo root is not `my-app`, set **Root Directory** to `my-app` in Vercel).
-2. Import the repo and deploy; the production URL is listed under **Live demo** above.
+2. Import the repo and deploy; for the production URL, see **Live demo** above.
 
 ## Safety & compliance
 
-- For **personal learning and education only**—do not use for unauthorized testing or attacks against any system.
-- Demos are **in-app / controlled** and do not instruct attacks against real third-party sites.
-- By using this project or the deployed site, you agree to follow applicable laws and platform rules.
+- For **personal learning and educational demos only**—do not use for unauthorized testing or attacks against any system.
+- Demos run **in-app / in controlled** environments to explain concepts; they do **not** instruct attacks against real third-party sites.
+- By using this repository or the deployed site, you agree to comply with **applicable local laws and regulations** and platform rules.
 
 ## License
 
-Follow the licenses of bundled dependencies; add your own `LICENSE` in the repo if needed.
+This project is licensed under the **MIT License**. See [`LICENSE`](./LICENSE) for details.
+
+Copyright (c) 2026 牛战士
